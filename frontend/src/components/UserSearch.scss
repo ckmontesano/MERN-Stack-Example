@@ -1,0 +1,44 @@
+.user-search-container {
+    margin: 0 auto;
+    width: 500px;
+    padding: 30px;
+    background: #fff;
+    border: solid 3px #585858;
+
+    .user-search-input {
+        font-size: 1.2em;
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .user-search-results-wrapper {
+        border: solid 2px #bdbdbd;
+
+        .user-record {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-bottom: solid 1px #bdbdbd;
+
+            .user-name {
+                font-weight: bold;
+            }
+
+            &.disabled {
+                color: #bdbdbd;
+                font-weight: bold;
+            }
+
+            &:nth-of-type(even) {
+                background-color: #e6e6e6;
+            }
+
+            &:nth-last-of-type(1) {
+                border: none;
+            }
+        }
+    }
+}
