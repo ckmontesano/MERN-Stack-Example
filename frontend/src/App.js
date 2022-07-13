@@ -2,20 +2,22 @@
 import './App.css';
 
 // components
+import NavBar from './components/NavBar';
+import CreateUser from "./components/CreateUser";
 import UserSearch from './components/UserSearch';
 
 function App() {
+
   return (
     <div className="App">
       <div className="main-container">
-        <div className="navigation-bar">
-          <div className="branding">
-            People
-            <span className="brand">Directory</span>
-          </div>
-        </div>
-        <div className="content-container">
+        <NavBar />
+        <div className="content-container flex-center">
+          <CreateUser />
           <UserSearch />
+        </div>
+        <div className="footer">
+          End of Page
         </div>
       </div>
     </div>

@@ -1,9 +1,5 @@
 .user-search-container {
   margin: 0 auto;
-  width: 500px;
-  padding: 30px;
-  background: #fff;
-  border: solid 3px #585858;
 }
 
 .user-search-container .user-search-input {
@@ -18,28 +14,29 @@
 }
 
 .user-search-container .user-search-results-wrapper .user-record {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 20px;
   border-bottom: solid 1px #bdbdbd;
 }
 
-.user-search-container .user-search-results-wrapper .user-record .user-name {
+.user-search-container .user-search-results-wrapper .user-record .user-details {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.user-search-container .user-search-results-wrapper .user-record .user-details .user-name {
   font-weight: bold;
 }
 
-.user-search-container .user-search-results-wrapper .user-record.disabled {
+.user-search-container .user-search-results-wrapper .user-record.no-users {
   color: #bdbdbd;
   font-weight: bold;
 }

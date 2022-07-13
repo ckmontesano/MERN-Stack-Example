@@ -9,7 +9,35 @@
   color: #8484dc;
 }
 
-.App input {
+.App .box {
+  margin: 15px;
+  width: 500px;
+  padding: 30px;
+  background: #fff;
+  border: solid 3px #585858;
+}
+
+.App .flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.App input,
+.App button {
   padding: 8px;
   background-color: white;
   border: solid 2px #bdbdbd;
@@ -19,44 +47,31 @@
   color: #111111;
 }
 
+.App button {
+  margin: 20px 0;
+  background-color: #e6e6e6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.App button:hover {
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+}
+
 .App .main-container {
   margin: 0 auto;
   width: 100%;
   max-width: 2000px;
 }
 
-.App .main-container .navigation-bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 60px;
-  background-color: #1e1e1e;
-  color: white;
-}
-
-.App .main-container .navigation-bar .branding {
-  font-size: 1.5em;
-  letter-spacing: .1em;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  cursor: pointer;
-}
-
-.App .main-container .navigation-bar .branding .brand {
-  font-weight: bold;
-}
-
 .App .main-container .content-container {
   padding: 30px 50px;
   background: #bdbdbd;
+}
+
+.App .main-container .footer {
+  color: #BDBDBD;
+  padding: 40px 50px 75px 50px;
 }
 /*# sourceMappingURL=App.css.map */

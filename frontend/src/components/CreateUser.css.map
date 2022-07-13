@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC;EACnB,UAAU,EAAE,KAAK;CAOpB;;AARD,AAGI,sBAHkB,CAGlB,KAAK,CAAC;EACF,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "CreateUser.scss"
+    ],
+    "names": [],
+    "file": "CreateUser.css"
+}

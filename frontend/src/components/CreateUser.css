@@ -1,0 +1,10 @@
+.create-user-container {
+  background: green;
+}
+
+.create-user-container input {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+}
+/*# sourceMappingURL=CreateUser.css.map */

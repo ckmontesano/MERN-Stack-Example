@@ -1,9 +1,5 @@
 .user-search-container {
     margin: 0 auto;
-    width: 500px;
-    padding: 30px;
-    background: #fff;
-    border: solid 3px #585858;
 
     .user-search-input {
         font-size: 1.2em;
@@ -16,18 +12,21 @@
         border: solid 2px #bdbdbd;
 
         .user-record {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
             padding: 20px;
             border-bottom: solid 1px #bdbdbd;
 
-            .user-name {
-                font-weight: bold;
+            .user-details {
+                display: inline-flex;
+                vertical-align: middle;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                .user-name {
+                    font-weight: bold;
+                }
             }
 
-            &.disabled {
+            &.no-users {
                 color: #bdbdbd;
                 font-weight: bold;
             }
